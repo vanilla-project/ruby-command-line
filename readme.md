@@ -30,6 +30,18 @@ bundle exec rspec
 `rspec` will automatically find all tests inside the `spec` directory and run them.
 
 
+### Testing Approach
+
+The test for class `Example` is only verifying the return value of one method.
+
+`Main` on the other hand is tested via a test-double that gets injected.
+This allows us to _spy_ on the output of it.
+We want to avoid printing anything to the screen while running the tests.
+Injecting a test double in this instance is a nice way to isolate our application from the command line.
+
+In the executable [`bin/example`](bin/example) we inject `$stdout`, which is Ruby's variable for its standard output.
+
+
 ## Built With
 
 - [Ruby](https://www.ruby-lang.org/en)
