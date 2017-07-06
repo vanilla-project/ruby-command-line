@@ -42,6 +42,17 @@ Injecting a test double in this instance is a nice way to isolate our applicatio
 In the executable [`bin/example`](bin/example) we inject `$stdout`, which is Ruby's variable for its standard output.
 
 
+## Running the Application
+
+To run the application execute `bin/example`.
+You should see the text &ldquo;Ruby Example&rdquo; being printed.
+
+```
+$: ./bin/example
+Ruby Example
+```
+
+
 ## Built With
 
 - [Ruby](https://www.ruby-lang.org/en)
